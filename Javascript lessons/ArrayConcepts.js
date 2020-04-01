@@ -41,3 +41,24 @@ let obj = courses.find(function(course){
 });
 
 console.log(obj);
+
+
+//Array functions - forEach, map, filter, find
+
+placesToVisit = ['Paris', 'New York', 'Switzerland'];
+
+placesToVisit.forEach(place => {
+    console.log('Trip to', place)
+});
+
+let Places_upper = placesToVisit.map(place => place.toUpperCase());
+console.log(Places_upper);
+
+console.log(placesToVisit.filter(place => place.length>5));
+
+console.log(placesToVisit.find(place => place.length>5));
+
+
+//Date object
+
+console.log(new Date());

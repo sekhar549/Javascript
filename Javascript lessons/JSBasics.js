@@ -46,3 +46,25 @@ function sum(a,b){
 }
 
 console.log(sum(10,40))
+
+//Arrow functions
+// Multi parameter
+
+calculateCost = (costPerPerson,noOfPersons) => {
+    return costPerPerson*noOfPersons;
+};
+
+console.log(calculateCost(2500,5));
+
+//No parameter function
+
+greetings = () => console.log('Welcome to ES6 Learning edition');
+greetings();
+
+//Single parameter function
+
+greetings = _ => console.log(`Welcome to ES6, ${_}`);
+greetings('Raj');
+
+
+
